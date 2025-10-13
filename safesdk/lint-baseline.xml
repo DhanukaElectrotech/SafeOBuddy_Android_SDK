@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.9.1" type="baseline" client="gradle" dependencies="false" name="AGP (8.9.1)" variant="all" version="8.9.1">
+
+    <issue
+        id="ScopedStorage"
+        message="The Google Play store has a policy that limits usage of MANAGE_EXTERNAL_STORAGE"
+        errorLine1="    &lt;uses-permission android:name=&quot;android.permission.MANAGE_EXTERNAL_STORAGE&quot; />"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="15"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        errorLine1="        editor.commit();"
+        errorLine2="               ~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/helpers/UserSessions.java"
+            line="109"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        errorLine1="        editor.commit();"
+        errorLine2="               ~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/helpers/UserSessions.java"
+            line="126"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        errorLine1="        editor.commit();"
+        errorLine2="               ~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/helpers/UserSessions.java"
+            line="138"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        errorLine1="        editor.commit();"
+        errorLine2="               ~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/helpers/UserSessions.java"
+            line="151"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                String paddedMinutes = String.format(&quot;%02d&quot;, selectedMinute);"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="402"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                String paddedhr = String.format(&quot;%02d&quot;, selectedHour);"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="403"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="            String str1 = String.format(&quot;%.0f&quot;, aar);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/helpers/JKHelper.java"
+            line="140"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="            String str0 = String.format(&quot;%.0f&quot;, tokenNumber);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/helpers/JKHelper.java"
+            line="157"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="            String str1 = String.format(&quot;%.0f&quot;, aar);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/helpers/JKHelper.java"
+            line="164"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                    fileExtension.toLowerCase());"
+        errorLine2="                                  ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/rest/RetrofitUtils.java"
+            line="64"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_CONNECT`"
+        errorLine1="                boolean isGranted = (mContext.checkSelfPermission(Manifest.permission.BLUETOOTH) == PackageManager.PERMISSION_GRANTED &amp;&amp; mContext.checkSelfPermission(Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED &amp;&amp; mContext.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED &amp;&amp; mContext.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &amp;&amp; mContext.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED);"
+        errorLine2="                                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="651"
+            column="167"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_SCAN`"
+        errorLine1="                        &amp;&amp; mContext.checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) == PackageManager.PERMISSION_GRANTED"
+        errorLine2="                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="674"
+            column="57"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_CONNECT`"
+        errorLine1="                        &amp;&amp; mContext.checkSelfPermission(Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED);"
+        errorLine2="                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="675"
+            column="57"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_SCAN`"
+        errorLine1="            Manifest.permission.BLUETOOTH_SCAN,"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="1020"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_CONNECT`"
+        errorLine1="            Manifest.permission.BLUETOOTH_CONNECT,"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="1021"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_ADVERTISE`"
+        errorLine1="            Manifest.permission.BLUETOOTH_ADVERTISE,"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="1023"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_SCAN`"
+        errorLine1="            Manifest.permission.BLUETOOTH_SCAN,"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="1030"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_CONNECT`"
+        errorLine1="            Manifest.permission.BLUETOOTH_CONNECT,"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="1031"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_CONNECT`"
+        errorLine1="                permissionsNeeded.add(Manifest.permission.BLUETOOTH_CONNECT);"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/PermissionModule.java"
+            line="50"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_SCAN`"
+        errorLine1="            permissionsNeeded.add(Manifest.permission.BLUETOOTH_SCAN);"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/PermissionModule.java"
+            line="58"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 31 (current min is 23): `android.Manifest.permission#BLUETOOTH_ADVERTISE`"
+        errorLine1="            permissionsNeeded.add(Manifest.permission.BLUETOOTH_ADVERTISE);"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/PermissionModule.java"
+            line="61"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setSuccess(cursor.getString(cursor.getColumnIndex(COLUMN_SUCCESS)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="544"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setCustomerName(cursor.getString(cursor.getColumnIndex(COLUMN_CustomerName)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="545"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setPhoneNo(cursor.getString(cursor.getColumnIndex(COLUMN_PhoneNo)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="546"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setAddress(cursor.getString(cursor.getColumnIndex(COLUMN_Address)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="547"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setDeviceType(cursor.getString(cursor.getColumnIndex(COLUMN_DeviceType)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="548"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setDeviceCode(cursor.getString(cursor.getColumnIndex(COLUMN_DeviceCode)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="549"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setDeviceID(cursor.getString(cursor.getColumnIndex(COLUMN_DeviceID)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="550"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setVehicleNumber(cursor.getString(cursor.getColumnIndex(COLUMN_VehicleNumber)));"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="551"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setCompanyName(cursor.getString(cursor.getColumnIndex(COLUMN_CompanyName)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="552"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setDevicePhoneNumber(cursor.getString(cursor.getColumnIndex(COLUMN_DevicePhoneNumber)));"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="553"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setDeviceSIMNumber(cursor.getString(cursor.getColumnIndex(COLUMN_DeviceSIMNumber)));"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="554"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setFileName(cursor.getString(cursor.getColumnIndex(COLUMN_fileName)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="555"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setFilepath(cursor.getString(cursor.getColumnIndex(COLUMN_filepath)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="556"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setLockData(cursor.getString(cursor.getColumnIndex(COLUMN_LockData)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="557"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setMACID(cursor.getString(cursor.getColumnIndex(COLUMN_MACID)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="558"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setLockCatgeory(cursor.getString(cursor.getColumnIndex(COLUMN_LockCatgeory)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="559"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setAccess(cursor.getString(cursor.getColumnIndex(COLUMN_Access)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="560"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setRemoteunlock(cursor.getString(cursor.getColumnIndex(COLUMN_Remoteunlock)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="561"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setAutoLock(cursor.getString(cursor.getColumnIndex(COLUMN_AutoLock)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="562"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setRoomStatus(cursor.getString(cursor.getColumnIndex(COLUMN_Roomstatus)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="563"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setGuestName(cursor.getString(cursor.getColumnIndex(COLUMN_GuestName)));"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="564"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setCheckindate(cursor.getString(cursor.getColumnIndex(COLUMN_Checkindate)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="565"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setCheckoutdate(cursor.getString(cursor.getColumnIndex(COLUMN_checkoutdate)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="566"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setGuestPhoneNo(cursor.getString(cursor.getColumnIndex(COLUMN_guestPhoneNo)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="567"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setGuestEmailId(cursor.getString(cursor.getColumnIndex(COLUMN_guestEmailId)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="568"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setGuestMasterId(cursor.getString(cursor.getColumnIndex(COLUMN_GuestMasterId)));"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="569"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setBatteryPerc(cursor.getString(cursor.getColumnIndex(COLUMN_BatteryPerc)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="570"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setHasgateway(cursor.getString(cursor.getColumnIndex(COLUMN_Hasgateway)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="571"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setLockTTAccess(cursor.getString(cursor.getColumnIndex(COLUMN_LockTTAccess)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="572"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setIsflagui(cursor.getString(cursor.getColumnIndex(COLUMN_Isflagui)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="573"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setUnitId(cursor.getString(cursor.getColumnIndex(COLUMN_UnitId)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="574"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setOnlineStatus(cursor.getString(cursor.getColumnIndex(COLUMN_OnlineStatus)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="575"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setEnddates(cursor.getString(cursor.getColumnIndex(COLUMN_Enddates)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="576"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setGateStatus(cursor.getString(cursor.getColumnIndex(COLUMN_GateStatus)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="577"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setLockID(cursor.getString(cursor.getColumnIndex(COLUMN_LockID)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="578"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setLockCode(cursor.getString(cursor.getColumnIndex(COLUMN_LockCode)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="579"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setDevicenumber(cursor.getString(cursor.getColumnIndex(COLUMN_devicenumber)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="580"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setMainLockID(cursor.getString(cursor.getColumnIndex(COLUMN_MainLockID)));"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="581"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setMainLockNumber(cursor.getString(cursor.getColumnIndex(COLUMN_MainLockNumber)));"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="582"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setLockType(cursor.getString(cursor.getColumnIndex(COLUMN_LockType)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="583"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setAutotimer(cursor.getString(cursor.getColumnIndex(COLUMN_autotimer)));"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="584"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setBtlockid(cursor.getString(cursor.getColumnIndex(COLUMN_btlockid)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="585"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setMainLocktype(cursor.getString(cursor.getColumnIndex(COLUMN_MainLocktype)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="586"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setItemName(cursor.getString(cursor.getColumnIndex(COLUMN_ItemName)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="587"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setKeyId(cursor.getString(cursor.getColumnIndex(COLUMN_KeyId)));"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="588"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        work.setId(cursor.getInt(cursor.getColumnIndex(COLUMN_ID)));"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/OTPDao.java"
+            line="117"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        work.setOtp(cursor.getString(cursor.getColumnIndex(COLUMN_OTP)));"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/OTPDao.java"
+            line="118"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        work.setRpwd(cursor.getString(cursor.getColumnIndex(COLUMN_RPWD)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/OTPDao.java"
+            line="119"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        work.setOtpGenerateTime(cursor.getString(cursor.getColumnIndex(COLUMN_OTP_GENERATE_TIME)));"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/OTPDao.java"
+            line="120"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        work.setContactId(cursor.getString(cursor.getColumnIndex(COLUMN_CONTACT_ID)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/OTPDao.java"
+            line="121"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        work.setDeviceId(cursor.getString(cursor.getColumnIndex(COLUMN_DEVICE_ID)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/OTPDao.java"
+            line="122"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        work.setVehicalNo(cursor.getString(cursor.getColumnIndex(COLUMN_VEHICAL_NO)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/OTPDao.java"
+            line="123"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        work.setType(cursor.getString(cursor.getColumnIndex(COLUMN_TYPE)));"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/OTPDao.java"
+            line="124"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setId(cursor.getInt(cursor.getColumnIndex(COLUMN_ID)));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/PendingDataDao.java"
+            line="194"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setApiname(cursor.getString(cursor.getColumnIndex(COLUMN_APINAME)));"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/PendingDataDao.java"
+            line="195"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setFirstcolumn(cursor.getString(cursor.getColumnIndex(COLUMN_FIRSTCOLUMN)));"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/PendingDataDao.java"
+            line="196"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setDetail(cursor.getString(cursor.getColumnIndex(COLUMN_DETAILS)));"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/PendingDataDao.java"
+            line="197"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setUploadStatus(cursor.getString(cursor.getColumnIndex(COLUMN_UPLOAD_STATUS)));"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/PendingDataDao.java"
+            line="198"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setServerId(cursor.getString(cursor.getColumnIndex(COLUMN_SERVER_ID)));"
+        errorLine2="                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/PendingDataDao.java"
+            line="199"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Range"
+        message="Value must be ≥ 0 but `getColumnIndex` can be -1"
+        errorLine1="        model.setDate(cursor.getString(cursor.getColumnIndex(COLUMN_DATE)));"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/PendingDataDao.java"
+            line="200"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates."
+        errorLine1="                SimpleDateFormat simpleFormat = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="497"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates."
+        errorLine1="        SimpleDateFormat mFormatter = new SimpleDateFormat(&quot;MM/dd/yyyy HH:mm:ss&quot;);"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="529"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates."
+        errorLine1="        SimpleDateFormat mFormatter = new SimpleDateFormat(strFormat);"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="534"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates."
+        errorLine1="        SimpleDateFormat s = new SimpleDateFormat(dateFormat);"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="540"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates."
+        errorLine1="                SimpleDateFormat dateFormat = new SimpleDateFormat(&quot;MM/dd/yyyy&quot;);"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="549"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates."
+        errorLine1="        DateFormat dfdb = new SimpleDateFormat(strFormat);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="561"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="AppCompatCustomView"
+        message="This custom view should extend `androidx.appcompat.widget.AppCompatTextView` instead"
+        errorLine1="public class SBTextViewBold extends TextView {"
+        errorLine2="                                    ~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/customFonts/SBTextViewBold.java"
+            line="8"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="AppCompatCustomView"
+        message="This custom view should extend `androidx.appcompat.widget.AppCompatTextView` instead"
+        errorLine1="public class SBTextViewRegular extends TextView {"
+        errorLine2="                                       ~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/customFonts/SBTextViewRegular.java"
+            line="9"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.9.0 is available: 2.2.20"
+        errorLine1="    implementation &quot;org.jetbrains.kotlin:kotlin-stdlib:1.9.0&quot;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="68"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.squareup.okhttp3:okhttp than 3.4.2 is available: 5.2.0"
+        errorLine1="    implementation &apos;com.squareup.okhttp3:okhttp:3.4.2&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="73"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.squareup.okhttp3:logging-interceptor than 3.4.2 is available: 5.2.0"
+        errorLine1="    implementation &apos;com.squareup.okhttp3:logging-interceptor:3.4.2&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="74"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="Overriding `@color/design_error` which is marked as private in com.google.android.material:material:1.13.0. If deliberate, use tools:override=&quot;true&quot;, otherwise pick a different name.">
+        <location
+            file="src/main/res/color/design_error.xml"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="            android:textSize=&quot;18dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_comment.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                    android:textSize=&quot;16dp&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fancyalertdialog.xml"
+            line="58"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                    android:textSize=&quot;16dp&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fancyalertdialog.xml"
+            line="71"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="&quot;Occured&quot; is a common misspelling; did you mean &quot;Occurred&quot;?"
+        errorLine1="    &lt;string name=&quot;map_exc&quot;>Exception Occured While Drawing the Whole Map&lt;/string>"
+        errorLine2="                                     ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="386"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="&quot;Ok&quot; is usually capitalized as &quot;OK&quot;"
+        errorLine1="    &lt;string name=&quot;media_picker_ok&quot;>Ok&lt;/string>"
+        errorLine2="                                   ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="399"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="&quot;Asign&quot; is a common misspelling; did you mean &quot;Assign&quot;?"
+        errorLine1="    &lt;string name=&quot;asign_unit&quot;>Asign Unit :&lt;/string>"
+        errorLine2="                              ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="601"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="&quot;Asign&quot; is a common misspelling; did you mean &quot;Assign&quot;?"
+        errorLine1="    &lt;string name=&quot;asign&quot;>Asign&lt;/string>"
+        errorLine2="                         ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="604"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="Did you mean &quot;administrator!&quot; instead of &quot;administrator1&quot;?"
+        errorLine1="    &lt;string name=&quot;your_lock_access_disabled_please_contact_administrator1&quot;>Your lock access disabled. Please contact administrator1&lt;/string>"
+        errorLine2="                                                                                                                     ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="699"
+            column="118"/>
+    </issue>
+
+    <issue
+        id="BadHostnameVerifier"
+        message="`verify` always returns `true`, which could cause insecure network traffic due to trusting TLS/SSL server certificates for wrong hostnames"
+        errorLine1="                public boolean verify(String hostname, SSLSession session) {"
+        errorLine2="                               ~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/rest/RetrofitRequest.java"
+            line="127"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="HardwareIds"
+        message="Using `getString` to get device identifiers is not recommended"
+        errorLine1="            String device_unique_id = Settings.Secure.getString(activity.getContentResolver(),"
+        errorLine2="                                      ^">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="115"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetJavaScriptEnabled"
+        message="Using `setJavaScriptEnabled` can introduce XSS vulnerabilities into your application, review carefully"
+        errorLine1="            mWebview.getSettings().setJavaScriptEnabled(true);"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="344"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers"
+        errorLine1="                        public void checkClientTrusted(java.security.cert.X509Certificate[] chain, String authType) throws CertificateException {"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/rest/RetrofitRequest.java"
+            line="94"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers"
+        errorLine1="                        public void checkServerTrusted(java.security.cert.X509Certificate[] chain, String authType) throws CertificateException {"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/rest/RetrofitRequest.java"
+            line="98"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="$GRADLE_USER_HOME/caches/8.11.1/transforms/c075bfc32041ba499ee7d135248beea2/transformed/jetified-coders-lib-1.0.13-3/jars/classes.jar"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="$GRADLE_USER_HOME/caches/8.11.1/transforms/c075bfc32041ba499ee7d135248beea2/transformed/jetified-coders-lib-1.0.13-3/jars/classes.jar"/>
+    </issue>
+
+    <issue
+        id="CustomX509TrustManager"
+        message="Implementing a custom `X509TrustManager` is error-prone and likely to be insecure. It is likely to disable certificate validation altogether, and is non-trivial to implement correctly without calling Android&apos;s default implementation."
+        errorLine1="                    new X509TrustManager() {"
+        errorLine2="                        ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/rest/RetrofitRequest.java"
+            line="92"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = mDatabase.rawQuery(countQuery, bindArgs);"
+        errorLine2="                                  ~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/GuestShutterLockDAO.java"
+            line="456"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `Cursor` should be freed up after use with `#close()`"
+        errorLine1="        Cursor cursor = mDatabase.rawQuery(countQuery, bindArgs);"
+        errorLine2="                                  ~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/database/dao/PendingDataDao.java"
+            line="127"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 23"
+        errorLine1="            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="612"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 23"
+        errorLine1="            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="631"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 23"
+        errorLine1="            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="650"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 23"
+        errorLine1="            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="696"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 23"
+        errorLine1="               if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/SFProgress.java"
+            line="28"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 23"
+        errorLine1="                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/SFProgress.java"
+            line="44"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 23"
+        errorLine1="               if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/SFProgress.java"
+            line="64"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields; this is a memory leak"
+        errorLine1="    static Activity mActivity;"
+        errorLine2="    ~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/SafeLock.java"
+            line="71"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `ApiCall` which has field `mContext` pointing to `Activity`); this is a memory leak"
+        errorLine1="    static ApiCall mApiCall = null;"
+        errorLine2="    ~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/SafeLock.java"
+            line="76"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields; this is a memory leak"
+        errorLine1="    public static Context mContext;"
+        errorLine2="           ~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/helpers/UserSessions.java"
+            line="26"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        message="Replace &quot;-&quot; with an &quot;en dash&quot; character (–, &amp;#8211;) ?"
+        errorLine1="    &lt;string name=&quot;hlp&quot;>In case of any query related to your order please feel free to contact us on +91-9910004715&lt;/string>"
+        errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="140"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        message="Replace &quot;-&quot; with an &quot;en dash&quot; character (–, &amp;#8211;) ?"
+        errorLine1="    &lt;string name=&quot;insufficient_information_for_the_lock&quot;>insufficient information for the lock, please contact to administration at : +91-7042741404\nThanks&lt;/string>"
+        errorLine2="                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="700"
+            column="58"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        message="Replace &quot;-&quot; with an &quot;en dash&quot; character (–, &amp;#8211;) ?"
+        errorLine1="    &lt;string name=&quot;error_tt_auth&quot;>Either User is not created for Lock, or the user  is not active, please contact to administration at : +91-7042741404\nThanks&lt;/string>"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="757"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;msg_loading_image&quot;>Loading...&lt;/string>"
+        errorLine2="                                     ~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="410"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;wait_&quot;>Please Wait...&lt;/string>"
+        errorLine2="                         ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="426"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/hotel_room_demo.jpg` in densityless folder">
+        <location
+            file="src/main/res/drawable/hotel_room_demo.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/ic_launcher.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/ic_launcher.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/ic_myaccount.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/ic_myaccount.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/ic_share.webp` in densityless folder">
+        <location
+            file="src/main/res/drawable/ic_share.webp"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/oval.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/oval.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/remote_unlock_guest_icon.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/remote_unlock_guest_icon.png"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="                    &lt;Button"
+        errorLine2="                     ~~~~~~">
+        <location
+            file="src/main/res/layout/fancyalertdialog.xml"
+            line="82"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="                    &lt;Button"
+        errorLine2="                     ~~~~~~">
+        <location
+            file="src/main/res/layout/fancyalertdialog.xml"
+            line="91"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ButtonCase"
+        message="The standard Android way to capitalize Ok is &quot;OK&quot; (tip: use `@android:string/ok` instead)"
+        errorLine1="    &lt;string name=&quot;media_picker_ok&quot;>Ok&lt;/string>"
+        errorLine2="                                   ~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="399"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_comment.xml"
+            line="28"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fancyalertdialog.xml"
+            line="34"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/progress_bar.xml"
+            line="16"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/toast_layout.xml"
+            line="18"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/toast_layout.xml"
+            line="36"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    mTextView.setText(paddedhr + &quot;:&quot; + paddedMinutes);"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="405"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    mEditText.setText(paddedhr + &quot;:&quot; + paddedMinutes);"
+        errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="408"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                            mTextView.setText((monthOfYears) + &quot;/&quot; + dayOfMonths + &quot;/&quot; + years);"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="443"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                            mEditText.setText((monthOfYears) + &quot;/&quot; + dayOfMonths + &quot;/&quot; + years);"
+        errorLine2="                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="446"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                mTextView.setText(simpleFormat.format(startDate) + &quot; - &quot; + simpleFormat.format(endDate));"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/codersworld/safelib/utils/CommonMethods.java"
+            line="498"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot; Vehicle Comments&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot; Vehicle Comments&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_comment.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Testing &quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;Testing &quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_comment.xml"
+            line="61"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Rate us if you like the app&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Rate us if you like the app&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fancyalertdialog.xml"
+            line="55"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Do you really want to Exit ?&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Do you really want to Exit ?&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fancyalertdialog.xml"
+            line="69"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Rate&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;Rate&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fancyalertdialog.xml"
+            line="88"
+            column="25"/>
+    </issue>
+
+</issues>

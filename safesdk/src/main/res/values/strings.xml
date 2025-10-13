@@ -1,0 +1,759 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="ok">OK</string>
+    <string name="empty_date_text">10</string>
+
+
+    <string name="recurringrupee">\u20B9 67.00</string>
+    <string name="strpayfrag">\u20B9 399</string>
+    <string name="app_name">SafeOBuddy</string>
+    <string name="forgot_pass"><u>Forgot Password</u></string>
+    <string name="dont_have_account">I don\'t have an account? <font color="#496FB6"><b>Sign Up</b></font></string>
+    <string name="lbl_username">Username</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_signup">Sign Up</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_privacy">By Logging in you agree to our Privacy Policy.</string>
+    <string name="lbl_privacy_policy">Privacy Policy</string>
+    <string name="lbl_version">Version (%1$s)</string>
+
+    <string name="vehicle_lock">Green color represents <b>Lock</b> vehicle .</string>
+    <string name="vehicle_unlock">Red color represents <b>UnLock</b> vehicle .</string>
+    <string name="vehicle_onignition">Green color represents <b>Ignition On</b> vehicle .</string>
+    <string name="vehicle_offignition">Red color represents <b>Ignition Off </b> Vehicle .</string>
+
+    <string name="vehicle_battery">This icon represents vehicle <b>Battery</b>.</string>
+    <string name="vehicle_gpssignal">This icon represents vehicle <b>Gps Signal</b>.</string>
+
+
+    <string name="donut_idle">Yellow color represents <b>Idle</b> vehicle .</string>
+    <string name="donut_nosignal">Red color represents having <b>No signal</b> vehicle .</string>
+    <string name="donut_running">Green color represents <b>Running</b> vehicle .</string>
+    <string name="donut_all">Sky blue represents <b>All </b> Vehicle .</string>
+
+    <string name="chart_0">Green color represents <b>0-2</b> hours vehicle idle time .</string>
+    <string name="chart_2">Yellow color represents <b>2-4</b> hours vehicle idle time .</string>
+    <string name="chart_4">Dark yellow color represents <b>4-6</b> hours vehicle idle time .</string>
+    <string name="chart_6">Yellow color represents <b>6-8</b> hours vehicle idle time .</string>
+    <string name="chart_8">Orange color represents <b>8-10</b> hours vehicle idle time .</string>
+    <string name="chart_10">Red color represents <b>10+</b> hours vehicle idle time .</string>
+
+
+    <string name="vehicle_load1">Yellow color represents <b>Empty</b> vehicle  .</string>
+    <string name="vehicle_load2">Green color represents Vehicle <b>Loading</b> Status .</string>
+
+    <string name="vehicle_unload1">Skyblue color represents <b>Loaded</b> vehicle .</string>
+    <string name="vehicle_unload2">Green color represents Vehicle <b>Unloading</b> .</string>
+
+    <string name="donut_trip_closed">Green color represents <b>Closed</b> vehicle .</string>
+    <string name="donut_trip_nosignal">Yellow color represents having <b>No signal</b> vehicle .</string>
+    <string name="donut_trip_opened">Red color represents <b>Opened</b> vehicle .</string>
+    <string name="donut_trip_powercut">Sky blue represents <b>Power cut</b> Vehicle .</string>
+    <string name="donut_trip_all">Yellow color represents <b>All</b> vehicle .</string>
+
+    <string name="show_tcom_as_home_page">Show FleetGuru as home page</string>
+    <string name="color_themes">Color Themes</string>
+
+    <string name="ringtone">Ringtone</string>
+
+    <string name="html_text_stopage"><![CDATA[ <font color=#000000><b>TEST</b></font> <font>Avg</font>]]></string>
+    <string name="do_you_want_to_register_for_ecommerce">Do you want to register for Ecommerce</string>
+
+    <string name="lighttheme">Do you want to set <b>Light</b> theme?</string>
+    <string name="darktheme">Do you want to set <b>Dark</b> theme?</string>
+
+    <string name="html_text"><![CDATA[ <font>Driver on </font> <font color=#000000><b>VEHICALNO</b></font>]]></string>
+
+
+    <string-array name="array_uom">
+        <item>Pieces</item>
+        <item>Box</item>
+        <item>Packet</item>
+        <item>Cartoon</item>
+        <item>KG</item>
+        <item>Gram</item>
+
+        <!--
+        7781
+        centurytracking
+        123456
+        -->
+
+    </string-array>
+    <string-array name="array_veicle_type">
+        <item>Truck</item>
+        <item>Car</item>
+    </string-array>
+    <string-array name="array_radius">
+        <item>10 KM</item>
+        <item>20 KM</item>
+        <item>25 KM</item>
+        <item>30 KM</item>
+        <item>35 KM</item>
+        <item>40 KM</item>
+        <item>45 KM</item>
+        <item>50 KM</item>
+        <item>55 KM</item>
+        <item>60 KM</item>
+        <item>65 KM</item>
+        <item>70 KM</item>
+        <item>75 KM</item>
+        <item>80 KM</item>
+        <item>85 KM</item>
+        <item>90 KM</item>
+        <item>95 KM</item>
+        <item>100 KM</item>
+
+    </string-array>
+    <string-array name="array_status">
+        <!--
+                <item>Pending</item>
+                <item>Hold</item>
+        -->
+        <item>Cancelled</item>
+        <item>Accepted</item>
+        <item>Completed</item>
+
+
+    </string-array>
+
+    <string-array name="stoppage_duration">
+        <item>5 Minutes</item>
+        <item>10 Minutes</item>
+        <item>15 Minutes</item>
+        <item>20 Minutes</item>
+        <item>25 Minutes</item>
+        <item>30 Minutes</item>
+        <item>35 Minutes</item>
+        <item>40 Minutes</item>
+        <item>45 Minutes</item>
+        <item>50 Minutes</item>
+        <item>55 Minutes</item>
+        <item>60 Minutes</item>
+    </string-array>
+    <string name="mobile_et">Contact No(username)</string>
+    <string name="Address">Address</string>
+    <string name="building_et">Building</string>
+
+    <string name="rupee">\u20B9</string>
+
+    <string name="verification_code">Verification Code</string>
+    <string name="hlp">In case of any query related to your order please feel free to contact us on +91-9910004715</string>
+    <string name="validate">Verify</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="resend">Didn\'t recevied yet ? </string>
+    <string name="resend1">Resend</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login_one">Login</string>
+    <string name="ordr1">Your Order ID is</string>
+    <string name="dlvr"> You Will Be Notified Once Your Order Is Ready</string>
+    <string name="ordr">Order Placed Successfully</string>
+    <string name="thnk">Thanks For Shopping With Us</string>
+
+    <string name="lbl_set_profile_photo" tools:ignore="MissingTranslation">Set profile image</string>
+    <string name="lbl_take_camera_picture" tools:ignore="MissingTranslation">Take a picture</string>
+    <string name="lbl_choose_from_gallery" tools:ignore="MissingTranslation">Choose from gallery</string>
+    <string name="nothing">Nothing here so far.</string>
+    <string name="date_hint">Date</string>
+    <string name="no_data_msg">We believe it is the time to add something!</string>
+
+    //TTLock
+
+    <string name="lock_about">Lock operate</string>
+    <string name="gateway_about">Gateway</string>
+    <string name="passcode_about">Passcode</string>
+    <string name="fingerprint_about">Fingerprint</string>
+    <string name="upgrade_about">Lock upgrade</string>
+    <string name="passageModeEnter">Set Passage Mode</string>
+    <string name="lockTimeAbout">Lock Time</string>
+    <string name="get_time">Get Lock Time</string>
+    <string name="lock_time_is">Lock time is </string>
+    <string name="set_lock_time">Set lock time</string>
+    <string name="config_feature">Enable/Disable some lock function</string>
+    <string name="get_log">Get Operation Log</string>
+    <string name="get_battery">Get Battery Level</string>
+    <string name="lock_system_info">Get lock system info</string>
+    <string name="set_custom_passcode">Create custom passcode</string>
+    <string name="input_custom_passcode">input custom passcode</string>
+    <string name="start_date">active date:</string>
+    <string name="end_date">expiring date:</string>
+    <string name="get_lock_status">get lock status</string>
+    <string name="set_auto_locking_time">set auto locking period</string>
+    <string name="modify_passcode">modify passcode</string>
+    <string name="delete_passcode">delete passcode</string>
+    <string name="reset_passcode">reset  passcode</string>
+    <string name="get_valid_passcodes">get all valid passcodes</string>
+    <string name="get_pwdinfo">get passcode verification info</string>
+    <string name="modify_date">modify expire date only</string>
+    <string name="modify_passcode_and_date">modify both</string>
+    <string name="input_new_passcode">input new passcode</string>
+    <string name="admin_passcode">admin passcode</string>
+    <string name="get_admin_passcode">get admin passcode</string>
+    <string name="modify_admin_passcode">modify admin passcode</string>
+
+
+    <string name="add_permanent_ic_card">Add permanent IC card</string>
+    <string name="add_period_id_card">Add time limited IC card</string>
+    <string name="modify_period">modify validity period</string>
+    <string name="delete_ic_card">delete IC card</string>
+    <string name="get_all_ic_card">get all valid IC cards in lock</string>
+    <string name="clear_all_ic_card">clear all IC card</string>
+
+    <string name="add_permanent_fingerprint">Add permanent fingerprint</string>
+    <string name="add_period_fingerprint">Add time limited fingerprint</string>
+    <string name="delete_fingerprint">delete fingerprint</string>
+    <string name="get_all_fingerprint">get all valid fingerprints in lock</string>
+    <string name="clear_all_fingerprint">clear all fingerprints</string>
+    <string name="unlock">Unlock</string>
+    <string name="lock">lock</string>
+    <string name="rolling_gate_up">Rolling gate up</string>
+    <string name="rolling_gate_down">Rolling gate down</string>
+    <string name="rolling_gate_pause">Rolling gate pause</string>
+    <string name="rolling_gate_lock">Rolling gate lock</string>
+    <string name="initLock">init lock</string>
+    <string name="reset_lock">reset lock</string>
+    <string name="reset_key">reset eKey</string>
+    <string name="lock_mute_mode">lock volume mute mode is</string>
+    <string name="remote_unlock">remote unlock is</string>
+    <string name="passcode_visible">passcode visible Mode is</string>
+    <string name="query">query</string>
+    <string name="my_fingerprint_list">my fingerprint list</string>
+    <string name="my_card_list">My IC Card List</string>
+
+    <!-- firmware update -->
+    <string name="check_version">Check for UPDATE</string>
+    <string name="recheck_version">Check for UPDATE Again</string>
+    <string name="words_status">status</string>
+    <string name="words_version_info">Version information</string>
+    <string name="retry">retry</string>
+
+    <!-- auth -->
+    <string name="enter_account">Phone number/Email</string>
+    <string name="enter_password">Password</string>
+    <string name="authorize">Login</string>
+
+    <string name="get_passage_mode">Get passage mode data</string>
+    <string name="set_passage_mode">Set passage mode</string>
+    <string name="delete_passage_mode">delete one passage mode</string>
+    <string name="clear_passage_mode">clear all passage mode settings</string>
+
+    <!-- gateway -->
+    <string name="initGateway">init gateway</string>
+    <string name="gateway_operate_info">Re Connect the Power, Click scan when the light flash alternately</string>
+    <string name="words_wifi_name">WiFi Name</string>
+    <string name="words_wifi_pwd">WiFi Password</string>
+    <string name="words_gateway_name">Gateway Name</string>
+    <string name="add">add</string>
+    <string name="no_updates">No updates</string>
+    <string name="new_version_found">New version found</string>
+    <string name="unknown_lock_version">Unknown lock version</string>
+    <string name="upgrade">upgrade</string>
+    <string name="retry_by_net">retry by net</string>
+    <string name="retry_by_ble">retry by ble</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="select_net">Choose WiFi</string>
+    <!--wireless keyboard-->
+    <string name="wirelesskeyboard">Wireless Keyboard</string>
+    <string name="start_scan">Start Scan</string>
+    <string name="stop_scan">Stop Scan</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- regionHost -->
+    <string-array name="region_host">
+        <item>America</item>
+        <item>China</item>
+        <item>Europe</item>
+        <item>India</item>
+        <item>EasternAmerica</item>
+        <item>WesternEurope</item>
+    </string-array>
+
+    //Tuya
+
+
+    <!-- user -->
+    <string name="user_logout">Logout</string>
+    <string name="user_management">USER MANAGEMENT</string>
+
+    <!-- assets -->
+    <string name="assets_done">Done</string>
+    <string name="asset_management">ASSET MANAGEMENT</string>
+    <string name="current_asset">Current Asset:</string>
+    <string name="asset_list">ASSET LIST</string>
+    <string name="asset_id">ASSET ID :</string>
+    <string name="product_id">PRODUCT ID :</string>
+
+    <!-- devices -->
+    <string name="device_management">DEVICE MANAGEMENT</string>
+    <string name="device_list">DEVICE LIST</string>
+    <string name="device_id">DEVICE ID :</string>
+    <string name="device_name">DEVICE NAME :</string>
+    <string name="device_controler">Device Controler</string>
+    <string name="device_online">Online Status :</string>
+    <string name="device_info">Device Info</string>
+
+    <!-- activator -->
+    <string name="device_network_config">DEVICE NETWORK CONFIGURATION</string>
+    <string name="ap_config">AP CONFIG</string>
+    <string name="qr_config">QR CONFIG</string>
+    <string name="wired_config">WIRED CONFIG</string>
+    <string name="add_zb_sub_device">ADD ZIGBEE SUB DEVICE</string>
+    <string name="nb_config">NB CONFIG</string>
+    <string name="start_activator">Start Activator</string>
+
+    <string name="qr_warning_tip">Use the camera device to scan the QR code</string>
+    <string name="qr_listen_tone">LISTENER WARNNING TONE</string>
+    <string name="activator_success_devices">ACTIVATOR SUCCESS DEVICES</string>
+    <string name="activator_error_devices">ACTIVATOR ERROR DEVICES</string>
+    <string name="activator_error_msg">ACTIVATOR ERROR MSG :</string>
+
+
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="add_sub_device">Add</string>
+
+    <!--Safeokart-->
+    <string-array name="arr_qty_type">
+        <item>Box</item>
+        <item>Pieces</item>
+        <item>KG</item>
+
+
+    </string-array>
+    <string name="speech_not_supported" translatable="false">Sorry! Your device doesn\'t support speech input</string>
+    <string name="speech_prompt" translatable="false">Say something&#8230;</string>
+    <string-array name="arr_filter">
+        <item>All</item>
+        <item>Scanned Items</item>
+        <item>Unmatched Items</item>
+        <item>Pending Scan Items</item>
+        <item>Extra Scan Items</item>
+    </string-array>
+
+    <string-array name="arr_lock_wo1">
+        <item>Lock Open Request</item>
+        <item>Lock Status</item>
+        <item>General Issue in lock</item>
+    </string-array>
+    <string-array name="arr_lock_wo">
+        <item>Lock Open Request</item>
+        <item>Installation</item>
+        <item>Repair</item>
+        <item>Upgrade</item>
+        <item>Uninstall</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="safeokart_array_status">
+        <item>Cancelled</item>
+        <item>Accepted</item>
+        <item>Completed</item>
+        <item>Out For Delivery</item>
+
+
+        <item>Ready for delivery</item>
+        <item>Packed</item>
+        <item>Parcel Packed</item>
+        <item>Delivered</item>
+    </string-array>
+
+    <string-array name="tax_type">
+        <item>Without Tax</item>
+        <item>With Tax</item>
+    </string-array>
+
+    <string name="email">Email :</string>
+    <string name="enable">Enable Notification</string>
+    <string name="error">Error in Retrieving Data</string>
+    <string name="exit">Press again to exit</string>
+    <string name="strexplore"><u>I JUST WANNA EXPLORE</u></string>
+    <string name="nospam">Don\'t worry ! We\'ll not spam you.</string>
+    <string name="hills">Hills</string>
+    <string name="pth">D:\\uploadeddocuments\\</string>
+    <string name="image">image</string>
+    <string name="intern">Please check your internet</string>
+    <string name="km_ran">Nearby KM Range</string>
+
+    <string name="loading">There is some problem in loading</string>
+    <string name="log">Do you want to logout?</string>
+    <string name="login">please logout and login again.</string>
+    <string name="loginButtonText">Login</string>
+    <string name="map_exc">Exception Occured While Drawing the Whole Map</string>
+    <string name="map_mode">Map Source</string>
+    <string name="map_setting">Map Setting</string>
+    <string name="map_t">Select Map Type</string>
+    <string name="mapbox">MapBox</string>
+    <string name="mapnik">Mapnik</string>
+    <string name="mapquest_aerial">Mapquest Aerial</string>
+    <string name="mapquest_osm">Mapquest</string>
+    <string name="mark_l">Problem reading list of markers.</string>
+    <string name="max_no_of_alerts">Max No. of Alerts</string>
+    <string name="media_picker_camera">Camera</string>
+    <string name="media_picker_cancel">Cancel</string>
+    <string name="media_picker_gallery">Gallery</string>
+    <string name="media_picker_ok">Ok</string>
+    <string name="media_picker_read_Write_external_storage">Read &amp; Write External Storage</string>
+    <string name="media_picker_select_from">Select From:</string>
+    <string name="media_picker_some_permission_is_denied">Some Permission is Denied</string>
+    <string name="media_picker_you_need_to_grant_access_to">You need to grant access to</string>
+    <string name="menu_kms_summary">KMS Summary</string>
+    <string name="menu_logout">Logout</string>
+    <string name="mobile">Mobile :</string>
+    <string name="msg_full_image">"You can't no longer choose."</string>
+
+    <string name="open_source_libraries">Open Source Libraries</string>
+    <string name="msg_loading_image">Loading...</string>
+    <string name="msg_no_image">"There is no album.
+Take a Picture!"</string>
+    <string name="msg_no_selected">There is no selected image.</string>
+    <string name="msg_permission">permission deny</string>
+    <string name="my_location">My location</string>
+    <string name="check">Check your phone registered for Notification</string>
+    <string name="check_your_phone_registered_for_notification">Check your phone registered for Notification</string>
+
+    <string name="new_text">Click outside circle to cancel tutorials</string>
+    <string name="no">No</string>
+    <string name="sound_on">Sound On</string>
+    <string name="ver">You are using new Version of application</string>
+    <string name="vers">You are using Version:</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="vlist">Vehicle list updated at :</string>
+    <string name="wait_">Please Wait...</string>
+    <string name="re_run_tutorials">Re-run tutorials</string>
+    <string name="refresh">Refresh</string>
+    <string name="roads_nl">Netherlands roads overlay</string>
+    <string name="rs">₹</string>
+    <string name="run">Your Phone is not registered for notifications, please click on Run to register</string>
+
+    <string name="supplier_html"><![CDATA[ <font>Shop : </font> <font><b>ASD</b></font>]]></string>
+
+    <string name="supplier_html1"><![CDATA[ <font>Supplier :</font> <font><b>ASD</b></font>]]></string>
+
+
+    <string name="no_trips">Sorry !! No Trips Available here.</string>
+    <string name="no_vehicles">Sorry !! No Vehicles Available here.</string>
+    <string name="not_a_member_yet">Not a member Yet</string>
+    <string name="noti">Your device has registered successfully for notifications</string>
+    <string name="notifc">Notifications</string>
+    <string name="notification">Notification</string>
+    <string name="offline">Offline mode</string>
+    <string name="disable_notification">Disable Notification</string>
+    <string name="disabled">Disabled Notification</string>
+    <string name="done">Done</string>
+    <string name="title_activity_about__us">About_Us</string>
+    <string name="title_activity_map_view_">Map</string>
+    <string name="newminium">Minimum Order Should be more than <b> ₹ 250  </b>            in order to proceed further.</string>
+
+    <string name="flat_et">Flat No.</string>
+
+    <string name="proceed">SELECT &amp; Proceed</string>
+
+    <string name="verification_code_subtext">Please type the verification code sent to +xxxxxxxxxx</string>
+
+    <string name="back">Back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="msg_error_unable_select_profile_pic" tools:ignore="MissingTranslation">Unable to set profile image. Please try again!</string>
+    <string name="toast_image_intent_null" tools:ignore="MissingTranslation">Image picker option is missing!</string>
+    <string name="dialog_permission_title" tools:ignore="MissingTranslation">Grant Permissions</string>
+    <string name="dialog_permission_message" tools:ignore="MissingTranslation">This app needs permission to use this feature. You can grant them in app settings.</string>
+
+
+    <string name="reset">Reset</string>
+    <string name="settings">Settings</string>
+    <string name="nonce_placeholder">Nonce: %s</string>
+    <string name="ideal_id_placeholder">iDEAL payment id: \n %s</string>
+    <string name="ideal_status_placeholder">iDEAL payment status: \n %s</string>
+    <string name="device_data_placeholder">Device Data: %s</string>
+    <string name="drop_in">Drop-In</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="paypal_button">@string/paypal</string>
+    <string name="visa_checkout_button">Visa Checkout</string>
+    <string name="ideal_button">Pay with iDEAL</string>
+    <string name="ideal_bank_icon">iDEAL bank icon</string>
+    <string name="local_payments_button">Local Payments</string>
+    <string name="preferred_payment_methods_button">Pref Payment Methods</string>
+    <string name="cards">Credit or Debit Cards</string>
+    <string name="create_transaction">Create a Transaction</string>
+    <string name="buy">Buy</string>
+    <string name="payment_icon">payment icon</string>
+
+    <!-- CardActivity -->
+    <string name="purchase">Purchase</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="sms_auth_code">SMS Auth Code</string>
+
+    <!-- CreateTransactionActivity -->
+    <string name="processing_transaction">Processing Transaction</string>
+    <string name="transaction_failed">Transaction Failed</string>
+    <string name="transaction_complete">Transaction Complete</string>
+
+    <!-- Settings -->
+    <string name="empty"></string>
+    <string name="none">None</string>
+    <string name="options">Options</string>
+    <string name="sandbox">Sandbox</string>
+    <string name="production">Production</string>
+    <string name="authorization">Authorization</string>
+    <string name="tokenization_key">Use Tokenization Key</string>
+    <string name="tokenization_key_summary">Use tokenization key for authorizing requests</string>
+    <string name="customer">Customer</string>
+    <string name="customer_summary">The customer id to use</string>
+    <string name="merchant_account">Merchant Account</string>
+    <string name="empty_merchant_account">Not specifying a merchant account will use the default merchant account. \n\nMerchant Account: %s</string>
+    <string name="collect_device_data">Collect Device Data</string>
+    <string name="collect_device_data_summary">Collects device data for fraud purposes</string>
+    <string name="android_pay">Android Pay</string>
+    <string name="usd">USD</string>
+    <string name="us">US</string>
+    <string name="android_pay_require_shipping_address">Require Shipping Address</string>
+    <string name="android_pay_require_shipping_address_summary">Require shipping address from the user</string>
+    <string name="android_pay_require_phone_number">Require Phone Number</string>
+    <string name="android_pay_require_phone_number_summary">Require phone number from the user</string>
+    <string name="android_pay_currency_title">Currency</string>
+    <string name="android_pay_currency_summary">Must be ISO–4217 format. \n\nCurrency: %s</string>
+    <string name="android_pay_allowed_countries_for_shipping_title">Allowed countries for shipping</string>
+    <string name="android_pay_allowed_countries_for_shipping_summary">Must be ISO–3166–2, separate by comma for multiple countries. \n\nCountries: %s</string>
+    <string name="google_payment_require_billing_address">Require Billing Address</string>
+    <string name="google_payment_require_billing_address_summary">Require billing address from the user</string>
+    <string name="google_payment_allow_prepaid_cards">Allow Prepaid Cards</string>
+    <string name="google_payment_allow_prepaid_cards_summary">Allow the user to use prepaid cards as a payment method</string>
+    <string name="google_payment_require_email">Require Email Address</string>
+    <string name="google_payment_require_email_summary">Require email address from the user</string>
+    <string name="paypal">PayPal</string>
+    <string name="paypal_use_hardcoded_configuration">Use Hardcoded Configuration</string>
+    <string name="paypal_use_hardcoded_configuration_summary">Use the configuration included in the PayPal SDK instead of downloading new configuration</string>
+    <string name="paypal_request_address_scope">Request Address Scope</string>
+    <string name="paypal_request_address_scope_summary">Request address scope from the user</string>
+    <string name="three_d_secure">3D Secure</string>
+    <string name="enable_three_d_secure">Enable 3D Secure</string>
+    <string name="enable_three_d_secure_summary">3D Secure will automatically be run on all Card payment methods</string>
+    <string name="require_three_d_secure">Require 3D Secure</string>
+    <string name="require_three_d_secure_summary">Requires a successful authentication for 3D Secure transactions</string>
+    <string name="paypal_disable_signature_verification">Disable app switch signature verification</string>
+    <string name="paypal_disable_signature_verification_summary">Allows app switch with a PayPal Wallet app that is not signed</string>
+    <string name="paypal_single_payment">Single Payment</string>
+    <string name="paypal_billing_agreement">Billing Agreement</string>
+    <string name="paypal_intent_type">Intent Type</string>
+    <string name="paypal_landing_page_type">Landing Page Type</string>
+    <string name="paypal_intent_authorize">Authorize</string>
+    <string name="paypal_intent_order">Order</string>
+    <string name="paypal_intent_sale">Sale</string>
+    <string name="paypal_display_name">Display Name</string>
+    <string name="paypal_display_name_summary">Name to be displayed in the PayPal flow</string>
+    <string name="paypal_landing_page_type_billing">Billing</string>
+    <string name="paypal_landing_page_type_login">Login</string>
+    <string name="venmo">Venmo</string>
+    <string name="vault_venmo">Vault Venmo</string>
+    <string name="vault_venmo_summary">Vault Venmo payment methods on creation. Requires a customer id to be set.</string>
+    <string name="amex">Amex</string>
+    <string name="amex_rewards_balance">Get Rewards Balance</string>
+    <string name="amex_rewards_balance_summary">Fetch Amex Rewards Balance on Card Tokenization. Requires a Client Token and relevant configurations.</string>
+
+    <!-- PayPalActivity -->
+    <string name="paypal_wallet_available">PayPal Wallet app available for app switch: %b</string>
+    <string name="paypal_credit_offered">Offer PayPal Credit</string>
+    <string name="paypal_credit_offered_summary">Offers PayPal Credit prominently in the payment flow</string>
+    <string name="paypal_useraction_commit_title">Set Useraction to Commit</string>
+    <string name="paypal_useraction_commit_summary">Sets the Payment User Action to Commit for Express Checkout Transactions</string>
+    <string name="paypal_address_override">Send a shipping address to PayPal</string>
+
+    <string name="paypal_address_override_summary">Sends a shipping address as an override option to PayPal for any PayPal request</string>
+
+    <!-- PreferredPaymentMethodsActivity -->
+    <string name="fetch_preferred_payment_methods_button">Preferred Payment Methods</string>
+    <string name="preferred_payment_methods_progress">Fetching preferred payment methods…</string>
+
+    <!--  MMthinkbiz-->
+
+    <string name="lbl_no">No</string>
+    <string name="lbl_yes">Yes</string>
+    <string name="location_text">We need to access your location on this device to use this app as per this app is based on GPS and location based Locks and Vehicle tracking. so please allow location permissions for this app, Please enable the GPS as well on your device.</string>
+    <string name="storage_text">We need to access your storage and camera to capture the image. so please allow location permissions for this app, Please enable the GPS as well on your device.</string>
+    <string name="default_notification_channel_id">my_channel_01</string>
+
+
+    <!--for Meter-->
+    <string name="sync_at">Sync at : </string>
+    <string name="balance">Balance</string>
+    <string name="grid_reading">Grid Reading</string>
+    <string name="dg_reading">DG Reading</string>
+    <string name="recharge">Recharge</string>
+    <string name="daily_uses">Daily Uses</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="uses">Uses</string>
+    <string name="setting">SETTINGS</string>
+    <string name="sanction_oad">Sanction Load</string>
+    <string name="grid">Grid</string>
+    <string name="dg">DG</string>
+    <string name="hourly">Hourly</string>
+    <string name="daily">Daily</string>
+    <string name="k_w">30.00 KW</string>
+    <string name="supply_status">Supply Status</string>
+    <string name="asign_unit">Asign Unit :</string>
+    <string name="remove_unit">Remove Unit :</string>
+    <string name="remove">Remove</string>
+    <string name="asign">Asign</string>
+    <string name="assign_meter">Assign meter</string>
+    <string name="name">Name</string>
+    <string name="user_id">User Id</string>
+    <string name="email_m">Email</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_user_id">Enter User ID</string>
+    <string name="menter_password">Enter Password</string>
+    <string name="unit"> Units</string>
+    <string name="daily_consumed">Daily Consumed:</string>
+    <string name="hourly_consumed">Hourly Consumed:</string>
+    <string name="safe_o_buddy_lock">Safe\'O\'Buddy Lock</string>
+    <string name="search">Search</string>
+    <string name="device_id_lock">Device Id: </string>
+    <string name="status">Status : </string>
+    <string name="company_name">CompanyName: </string>
+    <string name="rename_device">Rename Device</string>
+    <string name="delete_device">Delete Device</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="order_food">Order Food</string>
+    <string name="add_gateway">Add Gateway</string>
+    <string name="add_lock">Add Lock</string>
+    <string name="wallet">Wallet</string>
+    <string name="buy_products">Buy Products</string>
+    <string name="finance">Finance</string>
+    <string name="services">Services</string>
+    <string name="users">Users</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="faq">FAQ</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="click_unlock_button_to_generate_access_code">Click unlock button to generate Access Code</string>
+    <string name="access_code">Access Code</string>
+    <string name="click_below_button_to_unlock_the_unit">Click below button to unlock the unit</string>
+    <string name="unlock_record">Unlock Records</string>
+    <string name="settings_small">Settings</string>
+    <string name="please_refresh_page">Please Refresh Page</string>
+    <string name="basics">Basics</string>
+    <string name="rf_cards">RF Cards</string>
+    <string name="pass_code">Pass Code</string>
+    <string name="finger_print">Finger Print</string>
+    <string name="remote_unlock_setting">Remote Unlock</string>
+    <string name="lock_clock">Lock Clock</string>
+    <string name="auto_lock">Auto Lock</string>
+    <string name="upload_data">Upload Data</string>
+    <string name="add_lock_to_another_user">Add Lock To Another User</string>
+    <string name="share_lock_to_other_user">Share Lock To Other user</string>
+    <string name="delete">Delete</string>
+    <string name="card">Cards</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="lock_name">"Lock Name: "</string>
+    <string name="this_feature_allows_you_to_unlock_the_smart_lock_remotely_via_a_gateway_this_feature_can_only_be_turned_on_or_off_via_bluetooth">This Feature allows you to Unlock the Smart Lock Remotely via a Gateway. This Feature can ONLY be Turned ON or OFF via Bluetooth.</string>
+    <string name="turn_off">Turn Off</string>
+    <string name="current_mode">Current Mode:</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="turn_on">\" Turn On\"</string>
+    <string name="add_pass_code">Add Pass Code</string>
+    <string name="user_name">User Name:</string>
+    <string name="pass_code_name">Pass Code Name</string>
+    <string name="enter_user_name">Enter User Name</string>
+    <string name="please_enter_a_name">Please enter a Name</string>
+    <string name="type">Type:</string>
+    <string name="timed">Timed</string>
+    <string name="permanent">Permanent</string>
+    <string name="create_own_pass_code">Create Own Pass Code</string>
+    <string name="passcode">Passcode:</string>
+    <string name="start_date_">Start Date</string>
+    <string name="start_time_">Start Time</string>
+    <string name="no_of_days">No of Days:</string>
+    <string name="end_date_">End Date</string>
+    <string name="end_time_">End Time</string>
+    <string name="save">Save</string>
+    <string name="please_enter_temp_otp">Please Enter Temp OTP</string>
+    <string name="lock_number">Lock Number</string>
+    <string name="mac_id">MAC/ID</string>
+    <string name="battery">Battery</string>
+    <string name="validity_period">Validity Period</string>
+    <string name="please_enter_valid_amount">Please enter an valid amount</string>
+    <string name="amount_should_be_greater_than_Rs200">Amount should be greater than Rs. 500</string>
+    <string name="failed_to_addmoney_to_wallet_retry">Failed to add money to wallet , retry</string>
+    <string name="retry_c">Retry</string>
+    <string name="application_languages">Application Languages</string>
+    <string name="application_theme">Application Theme</string>
+    <string name="add_money_to_safeobuddy_wallet">Add Money to SafeOBuddy Wallet</string>
+    <string name="safeobuddy">SafeOBuddy</string>
+    <string name="money_will_be_added_to">Money will be added to</string>
+    <string name="safeobuddy_wallet">SafeOBuddy Wallet</string>
+    <string name="proceed_btn">Proceed</string>
+    <string name="online">Online</string>
+    <string name="offline_">Offline</string>
+    <string name="your_lock_access_disabled_lease_contact_administrator">Your lock access disabled. Please contact administrator</string>
+    <string name="your_lock_access_disabled_please_contact_administrator1">Your lock access disabled. Please contact administrator1</string>
+    <string name="insufficient_information_for_the_lock">insufficient information for the lock, please contact to administration at : +91-7042741404\nThanks</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete this device? Once you delete the device will not be accessible.</string>
+    <string name="already_exists">An Identical Name already exists. Please choose different name.</string>
+    <string name="error_tuya">Something went wrong at Tuya , please try once again</string>
+    <string name="search_unit_here">Search unit here</string>
+    <string name="keypad_lock">Keypad Lock</string>
+    <string name="add_keypad_type_locks">Add keypad type locks</string>
+    <string name="manual_lock">Manual Lock</string>
+    <string name="add_hotel_lock">Add Hotel Lock</string>
+    <string name="other_lock">Other Lock</string>
+    <string name="scan_other_type_locks">Scan other type locks</string>
+    <string name="sensors_others">Sensors/Others</string>
+    <string name="add_door_sensor">Add Door Sensor</string>
+    <string name="choose_lock_type">Choose Lock Type</string>
+    <string name="add_device_name">Add device name</string>
+    <string name="device_id_">Device id</string>
+    <string name="next">Next</string>
+    <string name="enter_device_name">Enter device name</string>
+    <string name="enterscan_device_id">Enter/Scan Device id</string>
+    <string name="please_scanenter_device_id">Please scan/enter device Id</string>
+    <string name="publication">Publication</string>
+    <string name="payment_history">Payment History</string>
+    <string name="order_history">Order History</string>
+    <string name="account_history">Account History</string>
+    <string name="wallet_0_0">Wallet(0.0)</string>
+    <string name="pending_order_items">Pending Order Items</string>
+    <string name="reward_points">Reward Points</string>
+    <string name="refer_amp_earn"><![CDATA[Refer & earn]]></string>
+    <string name="reach_us">Reach Us</string>
+    <string name="refund_and_cancellations">Refund and Cancellations</string>
+    <string name="feedback">Feedback</string>
+    <string name="help">Help</string>
+    <string name="about_this_app">About This App</string>
+    <string name="legal">Legal</string>
+    <string name="terms_of_service">Terms Of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="how_to_shop">How To Shop</string>
+    <string name="our_mission">Our Mission</string>
+    <string name="order">Order</string>
+    <string name="payments">Payments</string>
+    <string name="available_balance">Available Balance    ₹</string>
+    <string name="no_transactions_available_pull_down_to_refresh">No Transactions available, pull down to refresh.</string>
+    <string name="no_products_are_available_pull_down_to_refresh">No products are available, pull down to refresh.</string>
+    <string name="regular">Regular</string>
+    <string name="recurring">Recurring</string>
+    <string name="uses_cap">USES</string>
+    <string name="recharge_cap">RECHARGE</string>
+    <string name="setting_cap">SETTINGS</string>
+    <string name="gate_status">Gate Status :  </string>
+    <string name="dashboard">Dashboard</string>
+    <string name="lbl_workorder">Work Orders</string>
+    <string name="error_internet">We think your internet connection is lost.</string>
+    <string name="error_session_expire">Session Out Please Login again in order to proceed further.</string>
+    <string name="lbl_exit">Exit</string>
+    <string name="something_wrong">Something went wrong, try again.</string>
+    <string name="error_no_role">No Role is defined to this user or no such user exist.</string>
+    <string name="login_success">Authentication success</string>
+    <string name="error_tt_auth">Either User is not created for Lock, or the user  is not active, please contact to administration at : +91-7042741404\nThanks</string>
+
+</resources>

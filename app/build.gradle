@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.dhanuka.safeobuddy'
+    compileSdkVersion 36
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "com.codersworld.qr.scanner"
+        minSdkVersion 23 //change back to 19
+        targetSdkVersion 36
+        ndkVersion "27.0.12077973"
+        versionCode 1
+        versionName "1.0.1"
+        multiDexEnabled true
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        ndk {
+            abiFilters "arm64-v8a", "x86_64"
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+}
+
+dependencies {
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
+    implementation 'androidx.annotation:annotation:1.6.0'
+    implementation 'com.google.android.material:material:1.13.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.9.4"
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.3.0"
+    implementation project(path: ':safesdk')
+    //implementation 'com.github.kiasaint:SafeSDK:1.0.27'
+   // implementation 'com.github.kiasaint:SafeSDK:1.0.27'
+    //implementation 'com.github.kiasaint:SafeSDK:1.0.24'//1.0.23 for live and 1.0.24 for debug
+
+    implementation 'com.google.code.gson:gson:2.13.2'
+ }
+apply plugin: 'kotlin-android'
