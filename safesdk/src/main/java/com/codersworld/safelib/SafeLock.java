@@ -80,6 +80,7 @@ public class SafeLock implements OnResponse<UniverSelObjct>, OnAuthListener {
     ArrayList<AllLocksBean.InfoBean> mDevices = new ArrayList<>();
 
 
+
     public SafeLock(Activity activity, OnSafeAuthListener listener) {
         this.mActivity = activity;
         this.mAuthListener = listener;
