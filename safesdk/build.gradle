@@ -91,7 +91,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.DhanukaElectrotech'
             artifactId = 'SafeOBuddy_Android_SDK'
-            version = '1.0.2'
+            version = '1.0.3'
 
             afterEvaluate {
                 from components.release
