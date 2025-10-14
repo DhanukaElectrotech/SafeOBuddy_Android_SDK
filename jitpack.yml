@@ -5,6 +5,4 @@ install:
   - echo "No extra install steps"
 
 script:
-  - ./gradlew :safesdk:assembleRelease
-
-
+  - ./gradlew :safesdk:publishToMavenLocal
