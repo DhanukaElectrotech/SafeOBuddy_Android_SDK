@@ -27,21 +27,64 @@ public class PermissionModule {
         mContext = context;
     }
 
-
     public Boolean checkBTPermissions() {
+        permissionsNeeded = new ArrayList<>();
+
+        // Check for Bluetooth permissions based on the SDK version
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            // For Android 12 and above
+            try {
+                if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                    permissionsNeeded.add(Manifest.permission.BLUETOOTH_CONNECT);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+                permissionsNeeded.add(Manifest.permission.BLUETOOTH_SCAN);
+            }
+
+            if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.BLUETOOTH_ADVERTISE) != PackageManager.PERMISSION_GRANTED) {
+                permissionsNeeded.add(Manifest.permission.BLUETOOTH_ADVERTISE);
+            }
+        } else {
+            // For Android 11 (API level 30) and below
+            if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.BLUETOOTH) != PackageManager.PERMISSION_GRANTED) {
+                permissionsNeeded.add(Manifest.permission.BLUETOOTH);
+            }
+
+            if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.BLUETOOTH_ADMIN) != PackageManager.PERMISSION_GRANTED) {
+                permissionsNeeded.add(Manifest.permission.BLUETOOTH_ADMIN);
+            }
+
+            // Optional: BLUETOOTH_PRIVILEGED is only needed for privileged apps
+            if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.BLUETOOTH_PRIVILEGED) != PackageManager.PERMISSION_GRANTED) {
+                //permissionsNeeded.add(Manifest.permission.BLUETOOTH_PRIVILEGED);
+                String arr[] = new String[]{Manifest.permission.BLUETOOTH_PRIVILEGED};
+                requestPermission(arr);
+
+            }
+        }
+
+        // Log permissions that are still needed
+        Log.e("permissionsNeeded", new Gson().toJson(permissionsNeeded));
+
+        // If any permissions are needed, request them
+        if (permissionsNeeded.size() > 0) {
+            requestForPermissions(); // Implement this method to request the necessary permissions
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public Boolean checkBTPermissionsOld() {
         permissionsNeeded = new ArrayList<>();
         if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.BLUETOOTH) != PackageManager.PERMISSION_GRANTED) {
             permissionsNeeded.add(Manifest.permission.BLUETOOTH);
         }
-        //Android is 11 (R) or above
 
-        /*
-        if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            permissionsNeeded.add(Manifest.permission.READ_EXTERNAL_STORAGE);
-        }
-        if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            permissionsNeeded.add(Manifest.permission.READ_EXTERNAL_STORAGE);
-        }*/
         if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.BLUETOOTH_ADMIN) != PackageManager.PERMISSION_GRANTED) {
             permissionsNeeded.add(Manifest.permission.BLUETOOTH_ADMIN);
         }
@@ -65,10 +108,10 @@ public class PermissionModule {
                 permissionsNeeded.add(Manifest.permission.BLUETOOTH_PRIVILEGED);
             }
         }
-
+        Log.e("permissionsNeeded", new Gson().toJson(permissionsNeeded));
         if (permissionsNeeded.size() > 0) {
-            try{
-            }catch (Exception e){
+            try {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             requestForPermissions();
@@ -137,6 +180,7 @@ public class PermissionModule {
 
 
     }
+
 
     public void requestForPermissions() {
         if (permissionsNeeded.size() > 0) {
