@@ -1,8 +1,5 @@
 jdk:
   - openjdk17
 
-install:
-  - echo "No extra install steps"
-
 script:
-  - ./gradlew :safesdk:publishToMavenLocal
+  - ./gradlew clean :safesdk:assembleRelease
