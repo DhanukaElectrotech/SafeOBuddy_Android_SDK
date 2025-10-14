@@ -19,7 +19,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
@@ -83,7 +83,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.DhanukaElectrotech'
             artifactId = 'SafeOBuddy_Android_SDK'
-            version = '1.0.9'   // ⬅️ increase version before pushing new tag
+            version = '1.0.10'   // ⬅️ increase version before pushing new tag
 
             afterEvaluate {
                 from components.release
