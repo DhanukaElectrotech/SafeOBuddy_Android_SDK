@@ -2,4 +2,13 @@ jdk:
   - openjdk17
 
 before_install:
+  # Change directory to your library module
   - cd safesdk
+
+install:
+  # Install dependencies for the library module
+  - ./gradlew clean assembleRelease
+
+script:
+  # Publish the release variant to JitPack
+  - ./gradlew publishReleasePublicationToMavenLocal
