@@ -8,13 +8,18 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".scanner.activity.SplashActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/etLockId"
         android:hint="Device id"
-        android:layout_margin="@dimen/_10dp"
+        android:layout_margin="@dimen/_50dp"
         android:paddingStart="@dimen/_10dp"
         android:paddingEnd="@dimen/_10dp"
+        android:text="9603380"
         android:textColor="@color/black"
         android:background="@drawable/square_button_selector_one"
         android:layout_width="match_parent"
@@ -35,10 +40,21 @@
         android:layout_height="wrap_content"
         android:onClick="getRecords"
         android:text="Get Records" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getScan"
+        android:text="Scan" />
 
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"  />
-
+</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDevices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"/>
 </LinearLayout>
